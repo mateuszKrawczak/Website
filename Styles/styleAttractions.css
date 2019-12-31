@@ -1,0 +1,181 @@
+/*import czcionek*/
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
+/*opis wyglądu całej strony*/
+body
+{
+    background-color: #ccdafc;
+    font-family: 'Lato', sans-serif;
+    background-image: url("../Photos/bigben.jpg");
+    background-color: #cccccc;
+    color: white;
+    min-height:3800px;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+   
+}
+/*opis wyglądu "pojemnika" w nim - przechowuje całą zawartosc strony*/
+#container{
+
+    max-width:1280px;
+    min-height:3800px;
+    width:100%;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex-direction: column;
+   
+
+
+}
+
+/*opis wyglądu zdjecia na górze strony*/
+img.London {
+    
+    max-width: 1276px;
+    height: auto;
+      
+    border-radius: 25px;
+    border: 2px solid #cf142b;
+    width: 100%;
+    
+    
+  }
+
+
+
+/*opis wyglądu menu - paska nawigacji po stronie*/
+#menu
+{
+    min-height:66px;
+    max-width:1256px;
+    
+    height:auto;
+    width:auto;
+
+    background-color: #00247d;
+    margin-top:8px;
+    display: flex;
+    align-items:center;
+    text-align: center;
+    padding:10px;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 25px;
+    border: 2px solid #cf142b;
+}
+/*gdy strona jest zwężona do 620 px zmieniam wartosc flex-direction na kolumne żeby był responsywny*/
+@media (max-width: 620px) {
+    #menu {
+        flex-direction: column;   
+    }
+    .option{
+        margin-bottom:10px;
+        margin-right: 0px;
+    }
+    .monumentDescription
+    {
+        
+        
+        font-size:18px;
+    }
+    
+}
+/*opis wygladu kazdego wuboru z paska menu*/
+.option
+{
+    float: left;
+    min-width: 100px;
+    height:auto;
+    font-size: 30px;
+    margin-right: 10px;
+    padding: 10px;
+    opacity: 0.8;
+    /*display:flex;*/
+    border-radius: 25px;
+    border: 2px solid white;
+    
+    color:white;
+}
+
+/*opis wygladu po najechaniu kursorem na daną opcję*/
+.option:hover
+{
+    
+    background-color: #cf142b;
+    cursor: pointer;
+
+}
+
+/*opis wygladu zawartosci strony tam zawieram informacje w kazdej z podstron*/
+#content
+{
+    min-height:3166px;
+    max-width:1256px;
+
+    height:auto;
+    width:auto;
+
+    padding: 10px;
+    margin-top:10px;
+    background-image: linear-gradient(#cf142b ,#00247d);
+    
+    font-size:20px;
+    text-align: center;
+    
+    border-radius: 25px;
+    border: 2px solid #cf142b;
+
+}
+/*opis wygladu stopki*/
+#footer{
+
+    min-height:50px;
+    max-width:1256px;
+
+    width:auto;
+    height:auto;
+
+    background-color: #00247d;
+    color:white;
+    
+    margin-top:10px;
+    
+    text-align: center;
+    
+    display: flex;
+    flex-direction:column;
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px solid #cf142b;
+}
+
+/*opis wygladu zdjecia atrakcji turystycznej*/
+img.attractionPhoto
+{
+
+    max-width: 500px;
+    
+    width: 100%;
+    height:300px;
+    /*height:auto;*/
+    float:left;
+    margin-right:20px;
+    border-radius: 25px;
+    border: 2px solid #00247d;
+}
+/*opis wygladu artyku kazdej atrakcji turystycznej */
+.attraction
+{
+    height:auto;
+    clear: both;
+    
+}
+/*opis wygladu opisu atrakcji turystycznej*/
+.attractionDescription
+{
+    
+    text-align:justify;
+    font-size:24px;
+}
