@@ -1,4 +1,4 @@
-//wywołanie funkcji z pokazywaniem slajodw
+﻿//wywołanie funkcji z pokazywaniem slajodw
 showSlidesBigBen();
 function showSlidesBigBen(){
 
@@ -59,5 +59,5 @@ function showSlidesBigBen(){
   }
   //otwierane gdy wczytuje sie okno
   window.onload = changeImg;
-}
+
 }
